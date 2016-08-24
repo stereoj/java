@@ -6,6 +6,7 @@ package ua.com.juja.core;
  * Порядок сортировки должен сохраниться - по возрастанию. Элементы должны перебираться справа - налево. 
  * Всплывал - вправо, тонет - влево. Цикл не доходил до правого конца, теперь - не доходит до левого. 
  */
+
 public class BubbleSorterLeft {
     public static void sort(int[] arr) {
         for (int barrier = 0; barrier <= arr.length - 1; barrier++) {

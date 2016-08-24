@@ -3,6 +3,7 @@ package ua.com.juja.core.Week1;
 /**
  * Created by andy on 30.03.16.
  */
+
 public class ArrayUtils {
     public static int[] lookFor(int... array) {
         int Index1=array.length,Index2=array.length,count=0,maxcount=0,intcount=0,tmp=0,tmpIndex=0;
