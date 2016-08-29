@@ -11,12 +11,6 @@ import java.math.BigInteger;
 public class BigIntegerToBitString {
     public static String toBitStr(BigInteger arg) {
 
-        int number;
-        String str;
-
-        number = arg.intValue();
-        str = Integer.toBinaryString(number);
-
     return arg.toString(2);
     }
 }
