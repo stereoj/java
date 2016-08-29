@@ -4,6 +4,8 @@ import org.junit.Test;
 
 import java.math.BigInteger;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created in IntelliJ IDEA
  * by stereoj
@@ -13,24 +15,23 @@ import java.math.BigInteger;
 
 public class BigIntegerBitStringTest {
     @Test
-    public void Test() {
-        BigInteger k = new BigInteger("1024").pow(10);
+    public void test() {
+        assertEquals("11000000100011",
+                BigIntegerToBitString.toBitStr(new BigInteger("12323")));
+        assertEquals("1010101011000",
+                BigIntegerToBitString.toBitStr(new BigInteger("5464")));
+        assertEquals("10100011110001110000101100110",
+                BigIntegerToBitString.toBitStr(new BigInteger("343466342")));
+        assertEquals("1101010010000110101",
+                BigIntegerToBitString.toBitStr(new BigInteger("435253")));
+        assertEquals("10",
+                BigIntegerToBitString.toBitStr(new BigInteger("2")));
 
-        String expected = "1";
-        for (int i = 0; i < 10; i++) {
-            expected += "0000000000";
-        }
-
-        String actual = BigIntegerToBitString.toBitStr(k);
-
-        System.out.println("expected = " + expected);
-        System.out.println("actual = " + actual);
-
-        if (!expected.equals(actual)) {
-            throw new AssertionError();
-        }
-
-        System.out.print("OK");
+        // home work
+        assertEquals("1",
+                BigIntegerToBitString.toBitStr(new BigInteger("1")));
+        assertEquals("0",
+                BigIntegerToBitString.toBitStr(new BigInteger("0")));
     }
 
 
