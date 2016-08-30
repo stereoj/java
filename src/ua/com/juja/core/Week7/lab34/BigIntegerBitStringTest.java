@@ -26,8 +26,6 @@ public class BigIntegerBitStringTest {
                 BigIntegerToBitString.toBitStr(new BigInteger("435253")));
         assertEquals("10",
                 BigIntegerToBitString.toBitStr(new BigInteger("2")));
-
-        // home work
         assertEquals("1",
                 BigIntegerToBitString.toBitStr(new BigInteger("1")));
         assertEquals("0",
