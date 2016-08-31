@@ -1,4 +1,4 @@
-package ua.com.juja.core.Week7;
+package ua.com.juja.core.Week7.lab33;
 
 import java.math.BigInteger;
 import java.util.Arrays;
