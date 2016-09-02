@@ -6,7 +6,7 @@ package ua.com.juja.core.Week7.lab37;
  * Date: 02.09.2016
  * Time: 20:53
  */
- 
+  
 public class StringShift {
     public static String rightShift(String arg, int delta) {
 
